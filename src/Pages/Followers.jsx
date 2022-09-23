@@ -11,6 +11,7 @@ const Followers = () => {
     }
   return (
     <div>
+      <h1>Followers:--</h1>
         {Followers.length>0&&Followers.map((e,i)=>
         <div  key={i} onClick={()=>{Follwerdetails(e.login)}}>
        <Link to={`/${e.id}/${e.login}`}>

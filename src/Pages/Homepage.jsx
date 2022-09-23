@@ -12,13 +12,14 @@ const Hompage = () => {
     }
     const handlesearch = (e) => {
         dispatch(getRepo(username))
+        setUsername("")
       };
   return (
     <div>
-        <input type="text" 
+        <input type="text" value={username}
         onKeyUp={(e)=>{if (e.key === "Enter") {
             handlesearch()
-          }}} onChange={(e)=>{handelchange(e)}} />
+          }}} onChange={(e)=>{handelchange(e)}} placeholder="Enter Github User Id" />
         <button id='btn' onClick={()=>{handlesearch()}}>Serch</button>
           <Repos/>
     </div>

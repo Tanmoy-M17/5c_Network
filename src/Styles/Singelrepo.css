@@ -1,0 +1,43 @@
+#detailcontainer{
+    margin: auto;
+    margin-top: 5%;
+    width: 60%;
+    display: flex;
+}
+
+#Repoavatar{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+#vertified{
+    height: 25px;
+    width: 25px;
+}
+#vc{
+    display: flex;
+    margin-left: 20%;
+}
+#vc>h5{
+    margin:2px 0px 0px 0px;
+}
+#left>h5>span{
+    color: rgb(45, 45, 199);
+}
+#left{
+    width: 26%;
+}
+#right{
+    width: 60%;
+    margin-left: 4%;
+}
+#right>h1{
+    font-size: 50px;
+}
+#btnh{
+    height: 50px;
+    border-radius: 5px;
+    background-color: blue;
+    size: 20px;
+    color: white;
+}

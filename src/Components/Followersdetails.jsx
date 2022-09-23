@@ -19,7 +19,7 @@ const Followersdetails = () => {
       <img id='avtar'  src={`${currentUser.avatar_url}`} alt="" />
        <h1>{currentUser.login}</h1> 
       <Followersrepo/>
-      <button onClick={()=>{navigate("/")}}>Back To Home</button>
+      <button id='btnh' onClick={()=>{navigate("/")}}> &laquo; Back To Home</button>
     </div>
   )
 }

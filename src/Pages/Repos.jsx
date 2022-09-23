@@ -10,13 +10,16 @@ const Repos = () => {
     <User/>
     <div id='container'>
     {Repos.length>0&&Repos.map((data,i)=>
-    <Link  to={`/repo/${i}`} key={i}> 
+    <Link  to={`/repo/${data.id}`} key={i}> 
     <div id='container2'>
       <div>
             <img id='ravatar' src={`${data.owner.avatar_url}`} alt="" />
       </div>
       <div>
+        <div id='rname'>
         <h4>{data.name}</h4>
+        <img id='vertified' src="https://thumbs.dreamstime.com/b/approved-icon-profile-verification-accept-badge-quality-check-mark-sticker-tick-vector-illustration-136617543.jpg" alt="" />
+        </div>
         <h6>{data.description}</h6>
       </div>
    </div>

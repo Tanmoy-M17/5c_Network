@@ -13,3 +13,9 @@ h1{
     border-radius: 10px;
     height: 30px;
 }
+#user{
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}

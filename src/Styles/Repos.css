@@ -18,13 +18,25 @@ h6{
     text-align: left;
 }
 #container{
-    margin: 8%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: auto;
+    
     display: grid;
+    width: 70%;
     grid-template-columns: repeat(2,1fr);
+
 }
 #container2{
     margin: 10px;
     display: flex;
+    height: 150px;
+    padding: 50px 5px 0px 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#rname{
+    display: flex;
+}
+
+#repoh{
+    margin-left: 3%;
 }

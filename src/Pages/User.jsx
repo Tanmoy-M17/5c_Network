@@ -13,7 +13,8 @@ const User = () => {
     }
     if(Repos.length>0){
         return (
-            <div>
+            <div id='user'>
+                <h4>User Details</h4>
                 <img id='avtar' src={`${Repos[0].owner.avatar_url}`} alt="" />
                  <h1>{Repos[0].owner.login}</h1> 
                 <button id='followers' onClick={()=>{Followers(Repos[0].owner.login)}}>Followers</button>
