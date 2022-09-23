@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getRepo } from '../Redux/action';
+import Followers from './Followers';
 import Repos from './Repos';
 import User from './User';
 
@@ -23,6 +24,7 @@ const Input = () => {
         <button onClick={()=>{handlesearch()}}>Serch</button>
         <Repos/>
         <User/>
+        <Followers/>
     </div>
   )
 }
