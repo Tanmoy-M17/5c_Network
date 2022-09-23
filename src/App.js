@@ -1,10 +1,10 @@
 import './App.css';
-import Input from './Pages/Input';
+import Allrout from './Components/Allrout';
 
 function App() {
   return (
     <div className="App">
-     <Input/>
+    <Allrout/>
     </div>
   );
 }

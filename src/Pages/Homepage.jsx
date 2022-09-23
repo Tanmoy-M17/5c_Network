@@ -2,11 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getRepo } from '../Redux/action';
-import Followers from './Followers';
 import Repos from './Repos';
-import User from './User';
-
-const Input = () => {
+import "../Styles/Hompage.css"
+const Hompage = () => {
     const dispatch=useDispatch();
     const [username, setUsername] = useState("");
     const handelchange=(e)=>{
@@ -21,12 +19,10 @@ const Input = () => {
         onKeyUp={(e)=>{if (e.key === "Enter") {
             handlesearch()
           }}} onChange={(e)=>{handelchange(e)}} />
-        <button onClick={()=>{handlesearch()}}>Serch</button>
-        <Repos/>
-        <User/>
-        <Followers/>
+        <button id='btn' onClick={()=>{handlesearch()}}>Serch</button>
+          <Repos/>
     </div>
   )
 }
 
-export default Input
+export default Hompage
