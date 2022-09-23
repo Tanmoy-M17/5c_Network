@@ -15,36 +15,15 @@ const SingelRepo = () => {
    }, [Repos, id]); 
     console.log("c",currentRepo); 
       return (
-    //     <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' alignItems={"center"}>
-    //   <Image src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/07/Untitled-design-22-1.jpg" alt="" />
-
-    //   <Box p='6'>
-    //     <Box
-    //       mt='1'
-    //       fontWeight='semibold'
-    //       as='h4'
-    //       lineHeight='tight'
-    //       noOfLines={1}
-    //     >
-    //       {currentRepo.full_name}
-    //     </Box>
-
-    //     <Box>
-    //      Createdat: {currentRepo.created_at}
-    //       <Box as='span' color='gray.600' fontSize='sm'>
-    //       </Box>
-    //     </Box>
-
-        
-    //       <Box as='span' ml='2' color='gray.600' fontSize='sm'>
-    //       Language:  {currentRepo.language} 
-    //       </Box>
-    //     </Box>
-    //     <Button colorScheme='blue' onClick={()=>{
-    //        navigate("/")
-    //     }}>Back To Home</Button>
-    // </Box>
-    <div></div>
+    <div>
+      <img src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/07/Untitled-design-22-1.jpg" alt="" />
+      <h1>{currentRepo.full_name}</h1>
+      <h5>Createted At:{currentRepo.created_at}</h5>
+      <h5>Language:{currentRepo.language}</h5> 
+      <button colorScheme='blue' onClick={()=>{
+          navigate("/")
+      }}>Back To Home</button>
+    </div>
       )
 }
 
